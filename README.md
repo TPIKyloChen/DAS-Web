@@ -1,27 +1,58 @@
-# N
+# activiti
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+本專案使用 Angular - v18 + TypeScript + Angular CLI 開發
 
-## Development server
+- Node v18
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 目錄
 
-## Code scaffolding
+- [使用技術](#使用技術)
+- [開發流程](#開發流程)
+- [Commit 規範](#Commit規範)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 使用技術
 
-## Build
+- [Angular - v18](https://angular.io)
+  - 前端框架
+- [TypeScript](https://www.typescriptlang.org)
+  - 靜態型別檢查
+- [RxJS - v7](https://rxjs.dev)
+  - Reactive Extensions Library
+- [SCSS](https://sass-lang.com)
+  - CSS Preprocessor
+- [PRIMENG](https://primeng.org/)
+  - 適用於 Angular 的 UI 套件
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 開發流程
 
-## Running unit tests
+修改一律開新分支，base branch 依據開發功能。
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`TODO` 、 `FIXME`: 等註解標籤完成請移除。
 
-## Running end-to-end tests
+`console.log` 非正式需顯示用的，請在功能完成後移除。
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Commit 規範
 
-## Further help
+Commit 訊息依照 [約定式提交 (Conventional Commits)](https://www.conventionalcommits.org/zh-hant/v1.0.0/)。
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+<類型 type>[可選的作用範圍 scope]: <描述 description>
+
+[可選的正文 body]
+
+[可選的頁腳 footer]
+```
+
+### Type
+
+- chore: 其他，並且也不會修改原始碼或是測試。
+- revert: 回復前一個提交的 commit。
+- build: 影響構建系統或外部依賴項的更改。
+- ci: 更改我們的 CI 配置文件和腳本。
+- docs: 文檔的修改。
+- feat: 功能新增修改。
+- fix: 修復 Bug。
+- perf: 提升效能的改進。
+- refactor: 重構現有程式碼，不屬於新增新功能或是修 bug。
+- style: 不影響功能的更改（空格、格式、缺少分號等）。
+- test: 測試。
